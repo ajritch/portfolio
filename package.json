@@ -11,7 +11,7 @@
   },
   "scripts": {
     "start": "node server.js"
-  }
+  },
   "devDependencies": {
     "bootstrap": "^3.3.7",
     "browser-sync": "^2.13.0",
