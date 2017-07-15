@@ -1,10 +1,9 @@
-var express = require('express');
-var path = require('path');
-// var bodyParser = require('body-parser');
+const express = require('express');
+const path = require('path');
+const port = process.env.PORT || 7000;
 
-var app = express();
+const app = express();
 
-// app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, './client')));
 // app.use(express.static(path.join(__dirname, './bower_components')));
 
@@ -18,6 +17,5 @@ app.get('/', function (req, res, html) {
 // //module config and routing
 // require('./server/config/routes.js')(app);
 
-app.listen(7000, function() {
-	console.log('listening on port 7000');
-});
+app.listen(port);
+console.log(`server listening on port ${port}`);
