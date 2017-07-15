@@ -1,3 +1,12 @@
 .img-rounded {
 	border-radius: 15%;
 }
+
+.omg-green {
+	color: #fff;
+	text-decoration: none;
+}
+.omg-green, .omg-green:hover, .omg-green:focus, .omg-green:active {
+	color: #fff;
+	text-decoration: none;
+}

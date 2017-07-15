@@ -11,11 +11,7 @@ app.get('/', function (req, res, html) {
 	res.sendFile(path.join(__dirname, './client/index.html'));
 });
 
-//database config
-// require('./server/config/mongoose.js');
 
-// //module config and routing
-// require('./server/config/routes.js')(app);
 
 app.listen(port);
 console.log(`server listening on port ${port}`);
