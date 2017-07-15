@@ -8,6 +8,10 @@ var app = express();
 app.use(express.static(path.join(__dirname, './client')));
 // app.use(express.static(path.join(__dirname, './bower_components')));
 
+app.get('/', function (req, res, html) {
+	res.sendFile(path.join(__dirname, './client/index.html'));
+});
+
 //database config
 // require('./server/config/mongoose.js');
 
